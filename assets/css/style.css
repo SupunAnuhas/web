@@ -104,11 +104,16 @@ header{
     z-index: 1000;
 }
 
+
 header .logo{
     font-size: 2rem;
     color: var(--accent-color);
     font-weight: bold;
     text-decoration: none;
+}
+
+.menu-toggle {
+    display: none;
 }
 
 header nav{
@@ -285,3 +290,103 @@ footer a:hover{
         transform: rotate(-360deg);
     }
 }
+
+
+
+@media (max-width: 480px) {
+
+    .fix-image{
+        display: none;
+    }
+    /* Layout Adjustments */
+    .container {
+        width: 90%;
+        margin-top: 50px;
+    }
+
+    .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projects .project {
+        width: 100%;
+    }
+
+    .skills {
+        width: 90%;
+    }
+
+    .fix-image img {
+        height: auto;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    #home {
+        padding: 20px 10px;
+        text-align: center;
+    }
+
+    /* Header and Navigation */
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        height: auto;
+        align-items: center;
+        width: 100%;
+        padding: var(--padding);
+    }
+
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        font-size: 2rem;
+        color: var(--accent-color);
+    }
+
+    header nav {
+        display: none;
+        width: 100%;
+    }
+
+    header nav.active {
+        display: block;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    header .logo {
+        font-size: 1.5rem;
+    }
+
+    /* Typography */
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    h3,
+    p {
+        font-size: 1rem;
+    }
+
+    .shadow-style-one {
+        font-size: 2rem;
+    }
+
+    /* Buttons */
+    button {
+        width: 100%;
+        font-size: 1rem;
+        padding: 12px;
+    }
+}
+
