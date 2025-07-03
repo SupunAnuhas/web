@@ -16,14 +16,26 @@
             background-position: right bottom;
         }
     </style>
+    <script>
+        function toggleMenu() {
+          const nav = document.querySelector("header nav");
+          nav.classList.toggle("active");
+        }
+      </script>
+      
 
 </head>
 <body>
     <div class="fix-image">
         <img src="./resourses/myimg2.png" alt="">
     </div>
+
     <header>
         <div class="logo">Supun Anuhas</div>
+
+        <!-- 🟢 Move the toggle button here -->
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -33,6 +45,7 @@
             </ul>
         </nav>
     </header>
+
 
 
     <div class="page" id="home">
