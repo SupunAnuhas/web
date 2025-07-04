@@ -388,5 +388,23 @@ footer a:hover{
         font-size: 1rem;
         padding: 12px;
     }
+
+    .page {
+        width: 80%;
+        padding: 20px;
+    }
+
+    .project p{
+        display: none;
+    }
+
+    .project img {
+        height: 150px;
+        object-fit: contain;
+    }
+
+    .contact-content-table-pc{
+        display: none;
+    }
 }
 
